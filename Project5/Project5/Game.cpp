@@ -1,5 +1,6 @@
 #include "Game.h"
 #include <iostream>
+#include <algorithm>
 
 Game::Game(PlayableCharacter &_player) {
 	player = _player; 
@@ -55,6 +56,18 @@ void Game::monsterAttack(Character &_monster) {
 void Game::playerBattleWin() {
 	std::cout << "You win!\n"; 
 	battleEnd = true;
+
+	int healthReward = std::min(player.getHealth() + 20, 50); 
+	int attackReward = std::min(player.getAttack() + rand() % 3, 10); 
+	int defenceReward = std::min(player.getDefence() + rand() % 3, 10);
+	int specialReward = std::min(player.getSpecial() + rand() % 3, 10);
+	int moneyReward = player.getMoney() + player.getHealth(); 
+	player.setAttack(attackReward); 
+	player.setDefence(defenceReward); 
+	player.setSpecial(specialReward); 
+	player.setMoney(moneyReward); 
+	player.setMaxHealth(healthReward); 
+	player.setHealth(healthReward); 
 }
 
 void Game::monsterBattleWin(Character &_monster) {

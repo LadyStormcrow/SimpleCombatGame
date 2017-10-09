@@ -14,9 +14,13 @@ public:
 	void setMoney(int &_money); 
 	bool getSpecial(); 
 	void setSpecial(bool _special); 
+	int getMaxHealth();
+	void setMaxHealth(int _health);
+	void displayStats(); 
 private:
 	int money; 
 	bool specialUsed; 
+	int maxHealth; 
 };
 
 #endif
