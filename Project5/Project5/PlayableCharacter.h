@@ -12,8 +12,11 @@ public:
 	PlayableCharacter(std::string _name, int _attack, int _defence, int _health, int _special, int _money); 
 	int getMoney(); 
 	void setMoney(int &_money); 
+	bool getSpecial(); 
+	void setSpecial(bool _special); 
 private:
 	int money; 
+	bool specialUsed; 
 };
 
 #endif
