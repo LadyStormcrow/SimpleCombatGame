@@ -28,16 +28,8 @@ int PlayableCharacter::getMoney() {
 	return money;
 }
 
-void PlayableCharacter::setMoney(int &_money) {
+void PlayableCharacter::setMoney(int _money) {
 	money = _money; 
-}
-
-void PlayableCharacter::setSpecial(bool _special) {
-	specialUsed = _special; 
-}
-
-bool PlayableCharacter::getSpecial() {
-	return specialUsed; 
 }
 
 int PlayableCharacter::getMaxHealth() {

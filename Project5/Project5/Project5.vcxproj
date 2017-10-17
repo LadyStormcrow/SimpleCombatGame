@@ -114,7 +114,6 @@
     <ClCompile Include="AdvancedCharacter.cpp" />
     <ClCompile Include="PlayableCharacter.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Source1.cpp" />
     <ClCompile Include="Game.cpp" />
   </ItemGroup>
   <ItemGroup>

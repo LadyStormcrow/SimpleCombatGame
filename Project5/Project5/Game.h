@@ -12,6 +12,7 @@ public:
 	void battle(Character &_monster, bool _playerSpecial); 
 	int diceRoll();
 	bool battleEnd; 
+	void displayPlayerStats(); 
 private:
 	int diceValue; 
 	int attack; 

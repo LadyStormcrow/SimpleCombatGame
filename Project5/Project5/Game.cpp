@@ -74,3 +74,7 @@ void Game::monsterBattleWin(Character &_monster) {
 	std::cout << "You lose.\n"; 
 	battleEnd = true;
 }
+
+void Game::displayPlayerStats() {
+	std::cout << "Health: " << player.getHealth() << "/" << player.getMaxHealth() << "\tAttack: " << player.getAttack() << "\tDefence: " << player.getDefence() << "\tSpecial: " << player.getSpecial() << std::endl;
+}
